@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.social">
+            <block class="KevinRuscoe\Playground\Block\AddSampleForm" name="product.info.info.sample-form" after="addto" template="KevinRuscoe_Playground::sample/form.phtml" />
+        </referenceContainer>
+    </body>
+</page>
+
+
+

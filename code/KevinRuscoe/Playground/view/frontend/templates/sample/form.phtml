@@ -1,0 +1,5 @@
+<form action="<?php print $block->getFormUrl() ?>" method="post">
+    <?php echo $block->getBlockHtml('formkey')?>
+    <input type="hidden" name="product_id" value="<?php print $block->getCurrentProductId() ?>">
+    <button type="submit">Add Sample</button>
+</form>

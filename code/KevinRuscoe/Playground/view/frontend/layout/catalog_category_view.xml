@@ -2,9 +2,9 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="sidebar.additional">
-            <block class="Magento\Framework\View\Element\Template" name="test" template="KevinRuscoe_Sample::test.phtml" />
-            <block class="Magento\Framework\View\Element\Template" name="test_2" template="KevinRuscoe_Sample::test.phtml" />
-            <block class="Magento\Framework\View\Element\Template" name="test_3" template="KevinRuscoe_Sample::test.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="test" template="KevinRuscoe_Playground::test.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="test_2" template="KevinRuscoe_Playground::test.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="test_3" template="KevinRuscoe_Playground::test.phtml" />
         </referenceContainer>
     </body>
 </page>
