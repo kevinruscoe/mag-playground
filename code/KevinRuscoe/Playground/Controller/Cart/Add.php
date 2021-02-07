@@ -50,12 +50,21 @@ class Add extends \Magento\Framework\App\Action\Action
 		$baseSampleProduct = $this->getBaseSampleProduct();
 		$product = $this->getProduct();
 
+		// Dig out the 'base product id' option id
+		$base_product_id_option_id = null;
+		foreach ($baseSampleProduct->getOptions() as $option) {
+			if ($option->getTitle() === 'Base Product ID') {
+				$base_product_id_option_id = $option->getOptionId();
+				break;
+			}
+        }
+
 		// add to cart
         $this->cart->addProduct($baseSampleProduct, [
 			'qty' => 1,
 			'product' => $baseSampleProduct->getId(),
 			'options' => [
-				5 => $product->getId()
+				$base_product_id_option_id => $product->getId()
 			]
 		])->save();
 		
@@ -73,7 +82,9 @@ class Add extends \Magento\Framework\App\Action\Action
 
     private function getBaseSampleProduct()
     {
-		$baseSampleProduct = $this->productFactory->create()->load(2052);
+		$baseSampleProduct = $this->productFactory->create()->load(
+			2054 // TODO: Find this on the fly
+		);
 
 		if (! $baseSampleProduct->getId()) {
 			throw new LocalizedException(__('Failed to initialize product'));
