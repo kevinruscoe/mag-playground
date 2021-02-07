@@ -1,5 +1,5 @@
 {
-    "name": "kevinruscoe/sample",
+    "name": "kevinruscoe/playground",
     "description": "Test module for Magento 2",
     "type": "magento2-module",
     "version": "1.0.0",
@@ -16,7 +16,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "KevinRuscoe\\Sample\\": ""
+            "KevinRuscoe\\Playground\\": ""
         }
     }
 }

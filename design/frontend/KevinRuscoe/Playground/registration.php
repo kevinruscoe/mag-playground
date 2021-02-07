@@ -9,6 +9,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::THEME,
-    'frontend/Magento/kevin',
+    'frontend/KevinRuscoe/Playground',
     __DIR__
 );
